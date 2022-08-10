@@ -1,0 +1,46 @@
+
+<br>
+<div class="container col-lg-6">
+  
+<div [hidden]="submitted" style="width: 400px;">
+  <div class="login">
+  <form (ngSubmit)="onSubmit()">
+    <h3>Enter Details</h3>
+    <div class="form-group">
+      <label for="name">aadhar no</label>
+      <input type="text" class="form-control" id="name" required [(ngModel)]="user.name" name="name">
+    </div>
+
+    <div class="form-group">
+        <label for="aadharNo">collage id</label>
+        <input type="text" class="form-control" id="aadharNo" required [(ngModel)]="user.aadharNo" name="aadharNo">
+    </div>
+
+    <!-- <div class="form-group">
+        <label for="studentNo">phone number</label>
+        <input type="text" class="form-control" id="studentNo" required [(ngModel)]="user.studentNo" name="studentNo">
+    </div> -->
+    <div class="form-group">
+      <label>collage name</label>
+      <input type="text" class="form-control" required>
+  </div>
+  <div class="form-group">
+    <label>collage address</label>
+    <input type="text" class="form-control" required>
+</div>
+
+    <br>
+    <button type="submit" class="btn btn-success">nextstep</button>
+  </form>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+<!--<div class="container" style="margin-left: 500px;">
+    <a class="btn btn-dark" href="bookingdetails" role="button">Book</a>
+</div>-->

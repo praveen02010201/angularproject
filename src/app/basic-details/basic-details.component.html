@@ -1,0 +1,50 @@
+
+  <div class="basic">
+      <h1>BASIC DETAILS</h1>
+    <form class="row g-3" #basicDetailsForm="ngForm">
+        <!-- <form class="row g-3" #basicDetailsForm="ngForm" (ngSubmit)="saveBasicDetails(basicDetailsForm)"></form> -->
+      <div class="col-4">
+        <label for="inputEmail" class="form-label">Registered Email</label>
+        <input type="text" name="loginid" class="form-control" id="email" placeholder="" ngModel >
+    </div>
+        <div class="col-md-6">
+          <label for="inputAadhar" class="form-label">AADHAR NUMBER</label>
+          <input type="number" name="aadharno" class="form-control" id="aadhar" ngModel>
+        </div>
+        <div class="col-md-4">
+            <label for="inputReligion" class="form-label">RELIGION</label>
+            <select id="inputReligion" name="religion" class="form-select" id="religion" ngModel>
+              <option selected>select your religion</option>
+              <option>Hindu</option>
+              <option>Muslim</option>
+              <option>Christian</option>
+              <option>Sikh</option>
+              <option>Other</option>
+            </select>
+          </div>
+        <div class="col-6">
+          <label for="inputCommunity" class="form-label">COMMUNITY/CATEGORY</label>
+          <input type="text" name="community" class="form-control" id="community" placeholder="" ngModel>
+        </div>
+        <div class="col-6">
+          <label for="inputFatherName" class="form-label">FATHER NAME</label>
+          <input type="text" name="fatherName" class="form-control" id="fathername" ngModel>
+        </div>
+        <div class="col-md-6">
+          <label for="inputMotherName" class="form-label">MOTHER NAME</label>
+          <input type="text" name="motherName" class="form-control" id="mothername" ngModel>
+        </div>
+        <div class="col-md-6">
+          <label for="inputfamilyannualincome" class="form-label">FAMILY ANNUAL INCOME</label>
+          <input type="number" name="annualIncome" id="annualincome" class="form-control" ngModel>
+        </div>
+        <!-- <div class="col-12">
+          <button type="submit" href="academicdetails" class="btn btn-primary"> Submit</button>
+        </div> -->
+        <div class="col-12">
+            <a class="btn btn-primary" href="academicdetails" role="button">submit</a>
+        </div>
+      </form>
+    </div>
+    
+  

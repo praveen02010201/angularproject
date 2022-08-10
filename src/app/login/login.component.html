@@ -1,0 +1,36 @@
+
+<div class="container col-lg-6">
+    <!-- <h1 class="text-center">Login</h1> -->
+    <!-- <div class="card bg-light"> -->
+      <!-- <div class="card-body"> -->
+        <div class="login">
+        <form class="form-group" ngNativeValidate>
+          <h3 class="text-center">Login</h3>
+          <div class="alert alert-warning" *ngIf='invalidLogin'>{{errorMessage}}</div>
+          <div class="alert alert-success" *ngIf='loginSuccess'>{{successMessage}}</div>
+          <div class="form-group">
+            <label for="email">enter your email:</label>
+            <input type="text" class="form-control" id="username" [(ngModel)]="username" placeholder="Enter User Name"
+              name="username" required>
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" [(ngModel)]="password" id="password" placeholder="Enter password"
+              name="password" required>
+          </div>
+          <br>
+          <button (click)=checkLogin() class="btn btn-success">Login</button><br>
+          <p>Not a member? <a href="register">Signup</a></p>
+      
+        </form>
+        <body background="black">
+          
+        </body>
+      </div>
+      <!-- <p>Not a member?<a class="btn btn-success" href="register" role="button">Signup</a></p> -->
+      <!-- <button class="btn btn-success" href="register" role="button">New Registration</button> -->
+      
+      <!-- <p>Not a member? <a href="register">Login</a></p> -->
+      
+    <!-- </div> -->
+  </div>

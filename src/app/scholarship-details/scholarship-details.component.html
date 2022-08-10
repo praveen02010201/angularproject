@@ -1,0 +1,38 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>choose the scholarships</h2>
+      <marquee bgcolor="lightblue">Choose the scholarship application and apply</marquee>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <!-- <th>Flight Id</th> -->
+            <th>Country</th>
+            <th>State</th>
+            <th>Application Start</th>
+            <th>Application End</th>
+            <th>Date</th>
+            <th>Time taken to complete application</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let s of scholarships | async">
+            <!-- <td>{{ f.id }}</td> -->
+            <td>{{ s.country }}</td>
+            <td>{{ s.state }}</td>
+            <td>{{ s.appstart }}</td>
+            <td>{{ s.append }}</td>
+            <td>{{ newdate | date:'yyyy-MM-dd' }}</td>
+            <td>{{ s.time +' '+ min }}</td>
+            
+            <td>
+                <!--<a class="btn btn-success" href="FlightDetails(f.fNumber)" role="button">Select Flight</a>-->
+                <button (click)="ScholarshipDetails(s.id)" class="btn btn-secondary" style="margin-left: 10px">apply scholarship</button>
+                <!--<button (click)="productDetails(product.id)" class="btn btn-info" style="margin-left: 10px">Details</button>-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

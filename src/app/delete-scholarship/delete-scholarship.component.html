@@ -1,0 +1,19 @@
+<div class="container col-lg-6">
+    <h3>Delete scholarship</h3>
+    <div [hidden]="submitted" style="width: 400px;">
+      <form ngNativeValidate>
+        <div class="form-group">
+          <label for="name">enter the scholarship Number</label>
+          <br><br>
+          <input type="text" class="form-control" id="sNumber" required [(ngModel)]="products.sNumber" name="sNumber">
+        </div>
+     
+        <br>
+        <button (click)="deleteProduct(products.sNumber)" class="btn btn-success">Delete</button>
+        <br><br>
+        <a class="btn btn-success" href="addscholarship" role="button">Add scholarship</a>
+      </form>
+    </div>
+     
+    
+    </div>

@@ -1,0 +1,47 @@
+
+  <div class="other">
+      <h1>OTHER PERSONAL DETAILS</h1>
+      <!-- <form class="row g-3" #otherDetailsForm="ngForm" (ngSubmit)="saveOtherDetails(otherDetailsForm)"> -->
+        <form class="row g-3" #otherDetailsForm="ngForm">
+        <div class="col-4">
+          <label for="inputEmail" class="form-label">Registered Email</label>
+          <input type="text" name="loginid" class="form-control" id="email" placeholder="" ngModel >
+      </div>
+          <div class="col-md-6" >
+              <label for="inputIsDisabled" class="form-label">IS DISABLED</label>
+              <select id="inputIsDisabled" name="isdisabled" class="form-select" id="isdisabled" ngModel>
+                <option selected>Select </option>
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+          </div>
+          <div class="col-6">
+              <label for="inputTypeofDisablity" class="form-label">TYPE OF DISABILITY</label>
+              <input type="text" name="typeofdisability" class="form-control" id="typeofdisability" placeholder="" ngModel>
+          </div>
+          <div class="col-6">
+              <label for="inputpercentageofdisability" class="form-label">PERCENTAGE OF DISABILITY</label>
+              <input type="number" name="disabilitypercentage" class="form-control" id="percentageofdisablity" ngModel>
+            </div>
+            <div class="col-md-6">
+              <label for="inputMaritalStatus" class="form-label">MARITAL STATUS</label>
+              <select id="inputMaritalStatus" name="maritalstatus" class="form-select" id="maritalstatus" ngModel>
+                <option selected>Select </option>
+                <option>MARRIED</option>
+                <option>SINGLE</option>
+              </select>
+          </div>
+          <div class="col-6">
+              <label for="inputParentsProfession" class="form-label">PARENTS PROFESSION</label>
+              <input type="text" name="parentsprofession" class="form-control" id="parentsprofession" placeholder="" ngModel>
+          </div>
+          <!-- <div class="col-12">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div> -->
+            <div class="col-12">
+                <a class="btn btn-primary" href="contactdetails" role="button">submit</a>
+              </div>
+      </form>
+      </div>
+      
+  

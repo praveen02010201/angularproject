@@ -1,0 +1,67 @@
+
+  <div class="sub">
+      <!-- <form class="row g-3" #submitDetailsForm="ngForm" (ngSubmit)="saveSubmitDetails(submitDetailsForm)"> -->
+        <form class="row g-3" #submitDetailsForm="ngForm">
+          <div class="col-4">
+              <label for="inputEmail" class="form-label">Registered Email</label>
+              <input type="text" name="loginid" class="form-control" id="email" placeholder="" ngModel >
+          </div>
+            <div class="col-4">
+              <label for="gender" class="form-label" >GENDER  </label> <br>
+              <!-- <input type="radio" class="form-input" value="male" name="gender" [(ngModel)]="optionValue" ngModel>&nbsp;Male  &nbsp;
+              <input type="radio" class="form-input" value="female" name="gender" [(ngModel)]="optionValue" ngModel>&nbsp;Female -->
+              <input type="radio" class="form-input" value="male" name="gender"  ngModel>&nbsp;Male  &nbsp;
+              <input type="radio" class="form-input" value="female" name="gender" ngModel>&nbsp;Female
+              </div>
+          <div class="col-6">
+            <label for="inputScheme" class="form-label">CHOOSE SCHEME </label>
+            <select id="inputScheme" name="scheme" class="form-select" id="scheme" [(ngModel)]="schemeValue" ngModel>
+              <!-- <option *ngIf="optionValue=='male'" >Post Matric Scholarship (Merit-cum-Means Based for Students from Maharashtra)</option>
+              <option *ngIf="optionValue=='male'" >Merit Based Scholarship</option>
+              <option *ngIf="optionValue=='female'">Pragati Scholarship</option>
+              <option  *ngIf="optionValue=='male'">Central Scholarship Scheme</option>
+              <option *ngIf="optionValue=='female'">Central Scholarship</option>
+              <option *ngIf="optionValue=='female'">Merit Based Scholarship</option> -->
+              <option>Post Matric Scholarship (Merit-cum-Means Based for Students from Maharashtra)</option>
+              <option>Merit Based Scholarship</option>
+              <option>Pragati Scholarship</option>
+              <option>Central Scholarship Scheme</option>
+              <option>Central Scholarship</option>
+              <option>Merit Based Scholarship</option>
+            </select>
+          </div>
+          <!-- <div class="alert alert-danger" role="alert" *ngIf="optionValue=='female'">  -->
+            <div class="alert alert-danger" role="alert"> 
+              <ul><li>Scholarship for Girls have Pragati Scholarship and can be applicable for Two Girls per Family with Family income < 8lpa.</li>
+              </ul>
+            </div>
+            <!-- <div class="alert alert-danger" role="alert" *ngIf="schemeValue==2">  -->
+                <div class="alert alert-danger" role="alert"> 
+              <ul>
+              <li>Merit Based Scholarship has National Talent Search Examination , which should be attempted.</li></ul>
+            </div>
+            <div class="col-6">
+               <label for="inputDocument" class="form-label">UPLOAD DOCUMENTS</label>
+               <input type="file" id="document" class="form-control">
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  ALL THE DETAILS FURNISHED BY ME ARE TRUE TO THE BEST OF MY 
+                KNOWLEDGE. IF ANY MISTAKES ARE FOUND THEN I MAY BE DISQUALIFIED FOR SCHOLARSHIP SCHEME ANNOUNCED BY GOVERNMENT 
+                OF INDIA OR MY STATE GOVERNMENT.
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-12">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div> -->
+            <div class="col-12">
+                <a class="btn btn-primary" href="thankyou" role="button">submit</a>
+              </div>
+          </form>
+          </div>

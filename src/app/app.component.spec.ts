@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'NATIONAL_SCHOLARSHIP_PORTAL'`, () => {
+  it(`should have as title 'airline-consumer'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('NATIONAL_SCHOLARSHIP_PORTAL');
+    expect(app.title).toEqual('airline-consumer');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('NATIONAL_SCHOLARSHIP_PORTAL app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('airline-consumer app is running!');
   });
 });

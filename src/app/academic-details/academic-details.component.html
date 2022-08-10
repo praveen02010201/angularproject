@@ -1,0 +1,65 @@
+
+
+<div class="academic">
+    <h1>ACADEMIC DETAILS</h1>
+    <form class="row g-3" #academicDetailsForm="ngForm">
+    <!-- <form class="row g-3" #academicDetailsForm="ngForm" (ngSubmit)="saveAcademicDetails(academicDetailsForm)"> -->
+        <div class="col-4">
+            <label for="inputEmail" class="form-label">Registered Email</label>
+            <input type="text" name="loginid" class="form-control" id="email" placeholder="" ngModel>
+        </div>
+         <div class="col-md-4">
+                <label for="inputInstitutionName" class="form-label">INSTITUTION NAME</label>
+                <select id="inputInstitutionName" name="institution" class="form-select" id="institution" ngModel>
+                  <option selected>select your institution</option>
+                  <option>Institute 1</option>
+                  <option>Institute 2</option>
+                  <option>Institute 3</option>
+                  <option>Institute 4</option>
+                  <option>Institute 5</option>
+                </select>
+            </div>
+            <div class="col-4">
+                <label for="inputPresentClass" class="form-label">Present Class</label>
+                <input type="text" name="presentClass" class="form-control" id="presentclass" placeholder="" ngModel>
+            </div>
+            <div class="col-4">
+                <label for="inputPresentClassYear" class="form-label">Present Class Year</label>
+                <input type="date" name="presentClassYear"class="form-control" id="presentclassyear" placeholder="" ngModel>
+            </div>
+            <div class="col-md-4">
+                <label for="inputModeofStudy" class="form-label">MODE OF STUDY</label>
+                <select id="inputModeofStudy" name="modeofstudy" class="form-select" id="modeofstudy" ngModel>
+                  <option selected>Mode of Study</option>
+                  <option>Regular</option>
+                  <option>Distance</option>
+                </select>
+            </div>
+            <div class="col-4">
+                <label for="inputClassStartDate" class="form-label">Class Start Date</label>
+                <input type="date" name="classofdate" class="form-control" id="classstartdate" placeholder="" ngModel>
+            </div>
+            <div class="col-6">
+                <label for="inputUniversityName" class="form-label">University/BoardName</label>
+                <input type="text" name="university" class="form-control" id="university" placeholder="" ngModel >
+            </div>
+            <div class="col-4">
+                <label for="inputPreviousClass" class="form-label">Previous Class</label>
+                <input type="text" name="previousClass" class="form-control" id="previousclass" placeholder="" ngModel>
+            </div>
+            <div class="col-4">
+                <label for="inputPreviousClassYear" class="form-label">Previous Class Year</label>
+                <input type="date" name="previousClassYear" class="form-control" id="previousclassyear" placeholder="" ngModel >
+            </div>
+            <div class="col-md-4">
+                <label for="inputpreviouspercentage" class="form-label">Previous Class Percentage</label>
+                <input type="number"name="previousPercentage" id="previouspercentage" class="form-control" ngModel>
+              </div>
+              <!-- <div class="col-12">
+                <button type="submit" href="tenthdetails" name="next" class="btn btn-primary"> Submit</button>
+              </div> -->
+              <div class="col-12">
+                <a class="btn btn-primary" href="tenthdetails" role="button">submit</a>
+            </div>
+    </form>
+    </div>

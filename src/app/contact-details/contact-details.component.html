@@ -1,0 +1,53 @@
+
+  <div class="contact">
+      <h1>CONTACT DETAILS</h1>
+      <!-- <form class="row g-3" #contactDetailsForm="ngForm" (ngSubmit)="saveContactDetails(contactDetailsForm)"> -->
+        <form class="row g-3" #contactDetailsForm="ngForm">
+        <div class="col-4">
+          <label for="inputEmail" class="form-label">Registered Email</label>
+          <input type="text" name="loginid" class="form-control" id="email" placeholder="" ngModel >
+      </div>
+          <div class="col-6">
+              <label for="inputState" class="form-label">STATE</label>
+              <!-- <select id="inputState" name="state" class="form-select" [(ngModel)]="selectedValue" id="state" ngModel> -->
+ <select id="inputState" name="state" class="form-select"  id="state" ngModel>
+                <option selected>select your state</option>
+                <option value="1" name="state">Telangana</option>
+                <option value="2" name="state">Maharashtra</option>
+                <option name="state">Kerala</option>
+                <option name="state">MadhyaPradesh</option>
+                <option name="state">Punjab</option>
+              </select>
+            </div>
+            <!-- <div *ngIf="selectedValue== 2" class="alert alert-danger" role="alert"> 
+              Students from Maharashtra belonging to the backward categories can Select Merit-cum-Means Scheme offered by Maharashtra DTE Scholarship.
+            </div> -->
+            <div class="col-6">
+              <label for="inputDistrict" class="form-label">DISTRICT</label>
+              <input type="text" name="district" class="form-control" id="district" placeholder="Please enter your district" ngModel>
+            </div>
+            <div class="col-6">
+              <label for="inputTaluk" class="form-label">TALUK</label>
+              <input type="text" name="taluk" class="form-control" id="taluk" placeholder="Please enter your Taluk / Landmark" ngModel>
+            </div>
+            <div class="col-6">
+              <label for="inputHno" class="form-label">HOUSE NUMBER</label>
+              <input type="text" name="houseno" class="form-control" id="hno" placeholder="" ngModel>
+            </div>
+            <div class="col-6">
+              <label for="inputStreetno" class="form-label">STREET NUMBER</label>
+              <input type="text" name="streetno" class="form-control" id="streetno" placeholder="" ngModel>
+            </div>
+            <div class="col-6">
+              <label for="inputPincode" class="form-label">PINCODE</label>
+              <input type="number" name="pincode" class="form-control" id="pincode" placeholder="" ngModel>
+            </div>
+            <!-- <div class="col-12">
+              <button type="submit" class="btn btn-primary"> Submit</button>
+            </div> -->
+            <div class="col-12">
+                <a class="btn btn-primary" href="submitdetails" role="button">submit</a>
+              </div>
+      </form>
+      </div>
+  

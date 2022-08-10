@@ -1,0 +1,74 @@
+<div class="row">
+  <div class="col-md-5 text-dark">
+      <br>
+      <div class="container">
+          <div class="row align-items-start">
+            <div class="col">
+              <b>aadhar no</b> 
+            </div>
+            <div class="col">
+              {{name1}}
+            </div>
+          </div>
+      </div>
+      <div class="container">
+          <div class="row align-items-start">
+            <div class="col">
+              <b>collage id</b>
+            </div>
+            <div class="col">
+              {{aadharNo1}}
+            </div>
+          </div>
+      </div>
+      <!-- <div class="container">
+          <div class="row align-items-start">
+            <div class="col">
+              <b>phone number</b>
+            </div>
+            <div class="col">
+              {{studentNo1}}
+            </div>
+          </div>
+      </div> -->
+  
+  </div>
+  </div>
+  <br><br>
+
+  <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h5>scholarship application Selected</h5>
+      </div>
+      <div class="panel-body">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Scholarship Id</th>
+              <th>Country</th>
+              <th>State</th>
+              <th>Application Start</th>
+              <th>Application End</th>
+              <th>Date</th>
+              <th>time taken to complete the application</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngIf="scholarships | async as s">
+               <td>{{ s.sNumber }}</td>
+              <td>{{ s.country }}</td>
+              <td>{{ s.state }}</td>
+              <td>{{ s.appstart }}</td>
+              <td>{{ s.append }}</td>
+              <td>{{ newdate1 | date:'yyyy-MM-dd' }}</td>
+              <td>{{ s.time +' '+ min1 }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  
+  <br><br>
+  <div class="container" style="margin-left: 500px;">
+      <a class="btn btn-dark" href="payment" role="button">click here to apply</a>
+  </div>

@@ -1,0 +1,35 @@
+
+  <div class="tenth">
+
+      <h1>10<sup>th</sup>CLASS</h1>
+      <form class="row g-3" #tenthDetailsForm="ngForm">
+      <!-- <form class="row g-3" #tenthDetailsForm="ngForm" (ngSubmit)="saveTenthDetails(tenthDetailsForm)"> -->
+        <div class="col-4">
+          <label for="inputEmail" class="form-label">Registered Email</label>
+          <input type="text" name="loginid" class="form-control" id="email" placeholder="" ngModel >
+      </div>
+          <div class="col-md-6">
+            <label for="inputRollNo" class="form-label">ROLL NUMBER</label>
+            <input type="number" name="tenthrollno" class="form-control" id="tenthrollno" ngModel>
+          </div>
+          <div class="col-6">
+              <label for="inputBoardName" class="form-label">BOARD NAME</label>
+              <input type="text" name="tenthboard" class="form-control" id="tenthboardname" placeholder="" ngModel>
+          </div>
+          <div class="col-6">
+              <label for="inputPassingYear" class="form-label">Passing Year</label>
+              <input type="date" name="tenthyear" class="form-control" id="tenthpassingyear" placeholder="" ngModel>
+          </div>
+          <div class="col-md-4">
+              <label for="inputpercentage" class="form-label">Percentage Obtained</label>
+              <input type="number" name="tenthpercentage" id="tenthpercentage" class="form-control" ngModel>
+            </div>
+            <!-- <div class="col-12">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div> -->
+            <div class="col-12">
+                <a class="btn btn-primary" href="twelthdetails" role="button">submit</a>
+            </div>
+      </form>
+      </div>
+  

@@ -1,0 +1,30 @@
+
+  <div class="fee">
+      <h1>FEE DETAILS</h1>
+      <!-- <form class="row g-3" #feeDetailsForm="ngForm" (ngSubmit)="saveFeeDetails(feeDetailsForm)"> -->
+        <form class="row g-3" #feeDetailsForm="ngForm">
+        <div class="col-4">
+          <label for="inputEmail" class="form-label">Registered Email</label>
+          <input type="text" name="loginid" class="form-control" id="email" placeholder="" ngModel >
+      </div>
+          <div class="col-md-4">
+              <label for="inputAdmissionFee" class="form-label">ADMISSION FEE</label>
+              <input type="number" name="admissionfee" class="form-control" id="admissionfee" ngModel>
+            </div>
+            <div class="col-md-4">
+              <label for="inputTuitionFee" class="form-label">TUITION FEE</label>
+              <input type="number" name="tuitionfee" class="form-control" id="tuitionfee" ngModel>
+            </div>
+            <div class="col-md-4">
+              <label for="inputOtherFee" class="form-label">OTHER FEE</label>
+              <input type="number" name="otherfee" class="form-control" id="otherfee" ngModel>
+            </div>
+            <!-- <div class="col-12">
+              <button type="submit" class="btn btn-primary"> Submit</button>
+            </div> -->
+            <div class="col-12">
+                <a class="btn btn-primary" href="otherdetails" role="button">submit</a>
+            </div>
+      </form>
+      </div>
+  
